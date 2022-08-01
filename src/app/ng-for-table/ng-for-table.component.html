@@ -1,0 +1,34 @@
+<style>
+    th, td {
+      border:1px solid black;
+      text-align: center;
+    }
+    
+    </style>
+    
+
+<div style="padding: 40px;">
+    <table style="width:100%">
+      <tr>
+        <th>s/no.</th>
+        <th>Name</th>
+        <th>Department</th>
+        <th>Section</th>
+        <th>Hobby</th>
+        <th>Interested Subject</th>
+      </tr>
+      <tr *ngFor="let element of array">
+        <td>{{ element.sno }}</td>
+        <td>{{ element.name }}</td>
+        <td>{{ element.department }}</td>
+        <td>{{ element.Section }}</td>
+        <td>{{ element.Hobby }}</td>
+        <td>{{ element.interestedSub }}</td>
+
+      </tr>
+      
+    </table>
+</div>
+
+
+   <!-- <li *ngFor="let element of array"> {{  element.name }} </li> -->
